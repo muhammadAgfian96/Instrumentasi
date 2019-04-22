@@ -16,6 +16,8 @@ long unsigned int adc_new = 0;
 double posisi;
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
+int batas = 100;
+
 
 void setup()   {
   Serial.begin(9600);
@@ -44,7 +46,7 @@ void setup()   {
   display.clearDisplay();
 }
 
-int batas = 100;
+// Main Program
 void loop() {
   //-------Proses Akusisi Data ADC ------------
   adc_new = 0;
